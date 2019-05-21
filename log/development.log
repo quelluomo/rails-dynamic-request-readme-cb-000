@@ -169,3 +169,6 @@ Processing by PostsController#show as HTML
   Rendered posts/show.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.1ms)
   [1m[36mPost Load (2.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Pesciolissmi"], ["description", "Buonissimi"], ["created_at", "2019-05-21 08:16:10.447704"], ["updated_at", "2019-05-21 08:16:10.447704"]]
+  [1m[36m (46.2ms)[0m  [1mcommit transaction[0m

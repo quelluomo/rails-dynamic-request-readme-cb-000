@@ -117,3 +117,11 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 93.41.127.250 at 2019-05-21 08:12:46 +0000
+
+
+Started GET "/posts/1" for 93.41.127.250 at 2019-05-21 08:13:04 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
